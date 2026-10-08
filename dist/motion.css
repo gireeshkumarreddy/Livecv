@@ -1,0 +1,109 @@
+/* Curved floating header, scroll reveals, the expanding video and pointer effects. */
+
+:root{--ease-expo:cubic-bezier(.19,1,.22,1);--theme-ease:cubic-bezier(.65,0,.35,1)}
+
+/* ---------- Curved header ---------- */
+.site-header{position:fixed;padding-top:14px;pointer-events:none;transition:padding .45s var(--ease)}
+.site-header .nav-wrap{pointer-events:auto;height:66px;padding:0 10px 0 24px;border-radius:999px;background:#ffffffd1;border:1px solid #fffffff2;box-shadow:inset 0 1px 0 #fff,0 12px 34px #1d4f8a14,0 2px 6px #1d4f8a0a;backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5);transition:height .45s var(--ease),width .45s var(--ease),background .3s,box-shadow .3s}
+.site-header.scrolled{padding-top:10px}
+.site-header.scrolled .nav-wrap{height:58px;width:min(1080px,calc(100% - 48px));background:#fff;box-shadow:inset 0 1px 0 #fff,0 16px 40px #1d4f8a1f,0 2px 8px #1d4f8a0f}
+.desktop-nav{position:relative}
+.desktop-nav a{position:relative;z-index:1}
+.desktop-nav a.is-current{color:var(--blue)}
+.nav-pill{position:absolute;left:0;top:50%;z-index:0;height:34px;width:var(--pill-w,0px);translate:var(--pill-x,0px) -50%;border-radius:999px;background:#e4f1ff;box-shadow:inset 0 0 0 1px #cfe5ff;opacity:0;transition:translate .45s var(--ease),width .45s var(--ease),opacity .25s}
+.nav-pill.is-shown{opacity:1}
+.nav-actions .button-small{border-radius:999px}
+.mobile-nav{pointer-events:auto;margin-top:8px;padding:8px 22px 14px;border:1px solid #e3eef8;border-radius:24px;background:#fff;box-shadow:0 18px 40px #1d4f8a1f;animation:menu-in .35s var(--ease)}
+.site-header:has(.menu-toggle[aria-expanded=true]){background:none}
+@keyframes menu-in{from{opacity:0;translate:0 -8px}}
+
+/* ---------- Scroll reveals: fade in, rising from below ---------- */
+.js-motion .reveal{--reveal-t:opacity 1s var(--ease-expo) var(--delay,0ms),translate 1.3s var(--ease-expo) var(--delay,0ms),filter 1s var(--ease-expo) var(--delay,0ms);opacity:0;translate:0 56px;filter:blur(6px);transition:var(--reveal-t)}
+.js-motion .reveal.is-visible{opacity:1;translate:none;filter:none}
+.js-motion .reveal.stagger{opacity:1;translate:none;filter:none}
+.js-motion .stagger>*{--sd:calc(var(--delay,0ms) + var(--i,0) * 90ms);--reveal-t:opacity 1s var(--ease-expo) var(--sd),translate 1.2s var(--ease-expo) var(--sd),filter 1s var(--ease-expo) var(--sd);opacity:0;translate:0 40px;filter:blur(5px);transition:var(--reveal-t),color .2s,background .2s,box-shadow .25s,transform .35s var(--ease),border-color .2s,scale .2s var(--ease)}
+.js-motion .stagger.is-visible>*{opacity:1;translate:none;filter:none}
+
+/* Headings rise into place word by word. Each word is masked just below its line. */
+.js-motion .words .w{display:inline-block;clip-path:inset(-40% -12% -.32em -12%)}
+.js-motion .words .w>span{display:inline-block;translate:0 140%;transition:translate 1.3s var(--ease-expo) calc(var(--delay,0ms) + var(--wi,0) * 45ms)}
+.js-motion .words.is-visible .w>span{translate:none}
+.js-motion .stagger>.words{opacity:1;translate:none;filter:none}
+
+/* ---------- Video: small frame that grows to full screen on scroll ---------- */
+.video-section{padding:0}
+.video-pin{display:grid;place-items:center;padding:120px 0 120px}
+.video-stage{position:relative;width:min(1200px,calc(100% - 112px));aspect-ratio:16/9}
+.video-frame{position:absolute;inset:0;overflow:hidden;border-radius:0;background:#eaf5ff;box-shadow:0 30px 80px #1b4e8a2e}
+.launch-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#eaf5ff;pointer-events:none}
+
+.js-motion .video-section{height:260vh}
+.js-motion .video-pin{position:sticky;top:0;height:100vh;height:100svh;padding:0;overflow:hidden}
+/* The frame stays exactly 16:9 while it grows, up to the largest 16:9 size that fits the screen. */
+.js-motion .video-stage{--sw:min(clamp(300px,44vw,640px),calc(100vw - 40px));--fw:min(100%,100svh * 16 / 9);width:calc(var(--sw) + (var(--fw) - var(--sw)) * var(--p,0));height:auto;aspect-ratio:16/9}
+
+/* ---------- Buttons: magnetic pull, shine sweep, ripple, press ---------- */
+.button{position:relative;overflow:hidden;isolation:isolate;transition:color .2s,background .2s,box-shadow .25s,transform .45s var(--ease),border-color .2s,scale .2s var(--ease)}
+.button:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(105deg,transparent 30%,#ffffff5c 50%,transparent 70%);translate:-120% 0;transition:translate .8s var(--ease);pointer-events:none}
+.button-white:before{background:linear-gradient(105deg,transparent 30%,#0663fc1f 50%,transparent 70%)}
+.button:hover:before{translate:120% 0}
+.button:not(:hover):before{transition:none}
+.button .icon{transition:translate .35s var(--ease)}
+.button:hover .icon{translate:3px 0}
+.button.is-magnetic{transform:translate(var(--bx,0px),calc(var(--by,0px) - 2px))}
+.button:hover{box-shadow:0 12px 28px #0754f92e}
+.button-white:hover{box-shadow:0 10px 26px #1d4f8a1a}
+
+:where(.has-ripple){position:relative}
+.has-ripple{overflow:hidden;isolation:isolate}
+.ripple{position:absolute;border-radius:50%;background:currentColor;opacity:.22;pointer-events:none;transform:scale(0);animation:ripple .65s var(--ease) forwards}
+@keyframes ripple{to{transform:scale(1);opacity:0}}
+
+:is(.button,.mini-blue,.mini-action,.login-link,.audience-card,.share-destinations button,.share-icon-row>button,.orbit-label,.icon-button,.mini-identity,.example-link,.example-experience-link,.example-skill-preview,.ai-demo button,.profile-social button,.text-link):active{scale:.96}
+
+/* ---------- Cards: 3D tilt with a cursor spotlight ---------- */
+.tilt{position:relative}
+.tilt[data-tilt]{transition:var(--reveal-t,opacity .3s),transform var(--tilt-d,.7s) var(--ease),box-shadow .45s var(--ease),border-color .3s,background-color .3s,color .2s,scale .2s var(--ease)}
+.tilt[data-tilt].is-tilting{--tilt-d:.18s;transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(-6px);box-shadow:0 24px 50px #1d4f8a1f;border-color:#bcdcff}
+.tilt:after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(360px circle at var(--sx,50%) var(--sy,50%),#0663fc17,transparent 60%);opacity:0;transition:opacity .4s}
+.tilt.is-tilting:after{opacity:1}
+.share-destinations button.tilt{border-radius:16px}
+
+/* ---------- Color switch: while a marked section crosses the middle of the screen, the whole page turns blue ----------
+   Section backgrounds step aside so the page color shows through, loose text turns white,
+   and cards and windows (surfaces) keep their own light look. */
+body{transition:background-color .6s var(--theme-ease)}
+html.is-blue body{background-color:#0663fc}
+html:is(.is-blue,.is-blue-leaving) main>section{background:none}
+.hero-light,.hero-waves,.footer-waves,.hero:before{transition:opacity .6s var(--theme-ease)}
+html:is(.is-blue,.is-blue-leaving) :is(.hero-light,.hero-waves,.footer-waves),html:is(.is-blue,.is-blue-leaving) .hero:before{opacity:0}
+main :is(h1,h2,h3,h4,p,li,small,strong,label,dt,dd,th,td,figcaption){transition:color .6s var(--theme-ease)}
+html.is-blue main>section{--ink:#fff;--muted:#dbe8ff;--blue:#fff;--line:#ffffff40;color:#fff}
+html.is-blue :is(.surface,.profile-window,.resume-paper,.paper-small,.mini-identity,.step-ui,.comparison-card,.feature-card,.example-card,.copy-field,.faq-grid details,.audience-detail,.identity-center,.orbit-label){--ink:#102641;--muted:#647990;--blue:#0663fc;--line:#e1edf7;color:var(--ink)}
+html.is-blue main :is(.hero .lead,.microcopy,.small-label):not(:is(.surface,.profile-window,.resume-paper,.paper-small,.mini-identity,.step-ui,.comparison-card,.feature-card,.example-card,.copy-field,.faq-grid details,.audience-detail,.identity-center,.orbit-label) *){color:#dbe8ff}
+html.is-blue .hand-arrow{stroke:#fff}
+html.is-blue main .button:not(.button-white):not(:is(.surface,.profile-window,.resume-paper,.paper-small,.mini-identity,.step-ui,.comparison-card,.feature-card,.example-card,.copy-field,.faq-grid details,.audience-detail,.identity-center,.orbit-label) *){background:#fff;color:#0663fc;box-shadow:none}
+html.is-blue main .button-white:not(:is(.surface,.profile-window,.resume-paper,.paper-small,.mini-identity,.step-ui,.comparison-card,.feature-card,.example-card,.copy-field,.faq-grid details,.audience-detail,.identity-center,.orbit-label) *){background:transparent;color:#fff;border-color:#ffffff8c}
+
+/* ---------- Header: page links, with the current page highlighted ---------- */
+.desktop-nav a[aria-current=page]{color:var(--blue)}
+@media(max-width:1040px){.desktop-nav,.nav-actions>.login-link{display:none}.menu-toggle{display:grid}}
+.mobile-nav a[aria-current=page]{color:var(--blue)}
+
+@media(max-width:900px){
+ .video-pin{padding:100px 0}
+ .site-header .nav-wrap{padding-left:20px}
+}
+@media(max-width:680px){
+ .site-header{padding-top:10px}
+ .site-header .nav-wrap,.site-header.scrolled .nav-wrap{height:60px;width:calc(100% - 24px);padding:0 8px 0 16px;border-radius:24px}
+ .mobile-nav{width:calc(100% - 24px)}
+ .video-pin{padding:80px 0}
+ .video-stage{width:calc(100% - 40px)}
+ .js-motion .video-section{height:220vh}
+ .js-motion .video-stage{--sw:70vw}
+}
+@media(prefers-reduced-motion:reduce){
+ .js-motion .reveal,.js-motion .stagger>*{opacity:1;translate:none;filter:none}
+ .js-motion .words .w>span{translate:none}
+}

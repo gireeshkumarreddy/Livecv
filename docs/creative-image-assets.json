@@ -1,0 +1,55 @@
+{
+  "generator": "Built-in image generation",
+  "resolution": [
+    1672,
+    941
+  ],
+  "encoding": "Lossless WebP; generated pixels preserved.",
+  "purpose": "Distinct project collections, skill compositions and experience artwork for each profile.",
+  "assets": [
+    {
+      "asset": "/workspace/sites/livecv-career/dist/assets/project-research-ai.webp",
+      "prompt": "A premium editorial photograph for a UX research portfolio project, landscape 16:9. Direct overhead flat-lay on a warm cream and saffron workspace: a carefully composed journey map made from small coral, blue and yellow sticky-note squares, a sketchbook with simple wireframe drawings, delicate blue string connecting ideas, one polished pencil, a hand-drawn circular persona outline on a loose sheet. Graphic, tactile, sophisticated, beautifully lit, generous breathing room. No computer, no laptop, no phone, no people, no large text or readable labels, no watermark. Crisp paper texture and meaningful composition, not clutter. Highest available resolution. Every main element visible within the central 80 percent so it works as a small thumbnail."
+    },
+    {
+      "asset": "/workspace/sites/livecv-career/dist/assets/project-sensors-ai.webp",
+      "prompt": "A striking macro product photograph for a graduate engineer's Sensor Lab project, landscape 16:9. One small emerald green sensor circuit board with copper traces, white ceramic sensor, a neat pair of braided cables and precision metal connectors, suspended just above a matte mint laboratory surface. Shallow three-quarter view, precise physical materials, luminous soft studio light, restrained emerald, mint, copper and charcoal colors. Entire board centered with breathing room. Creative premium technical photography, not a schematic. No computer, no laptop, no screen, no person, no readable text, no watermark. Highest available resolution."
+    },
+    {
+      "asset": "/workspace/sites/livecv-career/dist/assets/project-dataflow-ai.webp",
+      "prompt": "A beautiful abstract 3D product visualization for a Python data-processing project called Dataflow, landscape 16:9. On a deep ink-purple background, a clear glass serpentine channel guides a stream of small cyan, electric blue and lavender spheres into neatly organized transparent cubical data blocks. One coherent elegant system, strong diagonal composition, jewel-like materials, precise highlights, soft volumetric glow, premium creative technology aesthetic. An intuitive concept of organizing messy data, not a factual diagram. No computer, no laptop, no phone, no code text, no labels, no people, no watermark. Objects centered with clean negative space and unmistakable silhouette at thumbnail size. Highest available detail."
+    },
+    {
+      "asset": "/workspace/sites/livecv-career/dist/assets/project-robotics-ai.webp",
+      "prompt": "Premium industrial product photography for a mechanical engineering portfolio project, landscape 16:9. A compact articulated white and brushed-aluminum robotic arm with small orange joints gently holds a smooth coral-red geometric cube above a pale concrete plinth. Warm neutral studio backdrop, low side camera angle, perfectly composed sculptural silhouette, precise mechanical detail, soft realistic shadows, restrained warm gray, white and safety orange. Entire arm visible and centered, clean premium design-exhibition feeling. No laptop, no computer, no screen, no people, no readable text, no watermark. Highest available detail."
+    },
+    {
+      "asset": "/workspace/sites/livecv-career/dist/assets/project-campaign-ai.webp",
+      "prompt": "A bold creative studio brand-campaign photograph for a growth marketer's portfolio, landscape 16:9. An unbranded cobalt-blue cylindrical drink can with a small abstract coral circle sits on a chunky pale pink pedestal; a folded scarlet paper backdrop and one juicy citrus half create a sophisticated editorial product campaign. Rich coral, pink, cobalt and warm orange palette, hard directional sunshine with attractive graphic shadows, camera near eye level, energetic but minimal. No computer, no laptop, no phone, no charts, no readable lettering, no logos, no people, no watermark. High-end art direction, centered composition legible as a small thumbnail, highest available detail."
+    },
+    {
+      "asset": "/workspace/sites/livecv-career/dist/assets/project-campaign-analytics-ai.webp",
+      "prompt": "A refined conceptual 3D still life for a marketing analytics project, landscape 16:9. On a pale peach seamless background, three polished translucent coral and amber glass funnels arranged diagonally pour tiny turquoise spheres onto ascending matte white bar-chart blocks. One turquoise curved ribbon links the composition. Beautiful sculptural balance, playful scientific studio aesthetic, clear shapes, realistic caustics and soft shadows. This is conceptual campaign conversion imagery, not a precise data report. No laptop, no computer, no monitor, no phone, no readable text, no numbers, no people, no watermark. Spacious composition centered inside the frame, very high detail."
+    },
+    {
+      "asset": "/workspace/sites/livecv-career/dist/assets/skill-design-creative-ai.webp",
+      "prompt": "Create a distinct premium 3D illustration of a designer's Figma prototyping world, landscape 16:9. NO laptop or computer. A large sculptural ivory cursor arrow floats among three slender white mobile UI artboards and small round component tokens, all arranged like a delicate architectural mobile above a soft lilac background. Fine coral curved connectors join the artboards, accent swatches in coral, violet, mint and blue, softly frosted materials, elegant isometric camera angle, crisp sophisticated studio rendering. The interface cards contain only simple abstract shapes, no readable text. Focus on the creative process, reusable design components and connected prototypes. No people, no desk scene, no charts, no logo, no watermark. Highest available detail, clean central composition with breathing room."
+    },
+    {
+      "asset": "/workspace/sites/livecv-career/dist/assets/skill-python-creative-ai.webp",
+      "prompt": "Create a distinct premium 3D illustration for Python programming skills, landscape 16:9. NO computer, NO laptop. Two thick sculptural interlocking ribbons in royal blue and warm yellow weave into a beautiful abstract code-loop shape, surrounded by a few small matte ivory bracket and curly-brace sculptures. A tiny stream of square blue data tiles runs through the central opening. Deep navy background, dramatic soft side lighting, sophisticated glossy ceramic materials, clear bold silhouette, high-end creative technology art direction. Inspired by Python's blue and yellow colors without drawing an exact logo. No text, no labels, no watermark, no people, no screen, no charts. Highest available detail; keep the full sculpture centered and inside frame."
+    },
+    {
+      "asset": "/workspace/sites/livecv-career/dist/assets/skill-growth-creative-ai.webp",
+      "prompt": "Create a distinct premium creative illustration for growth marketing skills, landscape 16:9. NO laptop, NO computer. A sculptural coral-orange megaphone rests on one lavender cube, sending an elegant ribbon of small colorful paper shapes and miniature abstract social-content cards upward in a graceful arc. A tiny mint sprout grows from a translucent amber circular pedestal at the arc's end, expressing audience growth. Warm pale peach background, warm playful sunshine, refined tactile paper and matte ceramic materials, elevated editorial art direction, balanced and uncluttered, not childish. No readable text, no logos, no watermark, no people, no dashboard, no screen. Highest available detail, scene fully inside frame."
+    },
+    {
+      "asset": "/workspace/sites/livecv-career/dist/assets/experience-engineering-ai.webp",
+      "prompt": "Premium cinematic editorial photograph for a graduate engineer's work experience, landscape 16:9. Close-up of two realistic adult hands carefully adjusting a compact mechanical sensor assembly on an uncluttered charcoal workbench using a precision screwdriver; a neat caliper and brushed steel parts nearby. Only hands and forearms visible, dark navy rolled sleeves, warm amber task light against cool industrial teal background, authentic tactile engineering work, precise believable tools and natural hand anatomy. No computer, no laptop, no monitor, no diagram, no readable text, no watermark. Strong diagonal composition, shallow depth of field, professional and creative rather than stock office photography. Highest available detail."
+    },
+    {
+      "asset": "/workspace/sites/livecv-career/dist/assets/experience-marketing-ai.webp",
+      "prompt": "Premium creative editorial photograph for a growth marketer's work experience, landscape 16:9. Overhead view of a sophisticated campaign-planning art director's desk: a large coral moodboard sheet, two gorgeous miniature botanical editorial photo prints, lilac and mint paper swatches, a camera lens, a small white ceramic coffee cup and a pale gold pen, arranged with intentional asymmetry on a warm ivory surface. Sunlit geometric shadows, rich tactile paper textures, magazine-quality art direction, lively warm colors. No computer, no laptop, no phone, no charts, no people, no readable text, no watermark. Coherent clean composition, generous negative space, highest available detail."
+    }
+  ]
+}

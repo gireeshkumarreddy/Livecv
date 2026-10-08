@@ -1,0 +1,103 @@
+/* Skills and work stories share the existing soft-blue profile design. */
+.project-2{background-image:url('assets/project-research-ai.webp');background-position:center}
+.project-3{background-image:url('assets/project-sensors-ai.webp');background-position:center}
+.project-4{background-image:url('assets/project-dataflow-ai.webp');background-position:center}
+.project-5{background-image:url('assets/project-robotics-ai.webp');background-position:center}
+.project-6{background-image:url('assets/project-campaign-ai.webp');background-position:center}
+.project-7{background-image:url('assets/project-campaign-analytics-ai.webp');background-position:center}
+.project-8{background-image:url('assets/project-team-ai.webp');background-position:center}
+.skill-mark{display:block;width:22px;height:22px;flex:none}
+.skill-symbol{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid #e2edf7;border-radius:9px;background:#fff;color:var(--blue)}
+.skill-symbol .icon{width:20px;height:20px}
+.profile-skills,.profile-experience{display:grid;gap:18px;min-width:0}
+.profile-skills .profile-tab-title,.profile-experience .profile-tab-title{margin:0;gap:12px}
+.skill-spotlight{display:grid;grid-template-columns:1.25fr 1fr;align-items:center;background:#f2f8ff;border:1px solid #e1edf8;border-radius:12px;overflow:hidden;min-width:0}
+.skill-spotlight>img{display:block;width:100%;height:100%;min-height:190px;object-fit:cover}
+.skill-spotlight-copy{padding:22px;min-width:0}
+.tool-badge{display:inline-flex;align-items:center;gap:9px;color:#30506c;font-size:11px;font-weight:500;margin-bottom:14px}
+.tool-badge .skill-mark{width:19px;height:23px}
+.skill-spotlight-copy h4,.experience-heading h4{font-size:17px;line-height:1.3;letter-spacing:-.035em;color:var(--ink)}
+.skill-spotlight-copy p{font-size:11px;line-height:1.75;color:#56738c;margin-top:11px}
+.skill-detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.skill-detail{min-width:0;padding:16px;border:1px solid #e5eef7;background:linear-gradient(140deg,#fff,#f7fbff);border-radius:10px}
+.skill-detail h4{font-size:12px;color:var(--ink);margin-top:12px;line-height:1.4}
+.skill-detail p{font-size:10px;line-height:1.7;color:#617d96;margin-top:6px;overflow-wrap:anywhere}
+.experience-heading{display:grid;grid-template-columns:155px minmax(0,1fr);align-items:center;gap:22px;padding:13px;border:1px solid #e3edf6;background:#f6faff;border-radius:11px}
+.experience-heading>img{display:block;width:100%;height:110px;object-fit:cover;border-radius:7px}
+.experience-heading>div{min-width:0;padding:8px 12px 8px 0}
+.experience-eyebrow{display:block;font-size:8px;text-transform:uppercase;letter-spacing:.11em;color:#567fa5;margin-bottom:8px;font-weight:500}
+.experience-heading p{font-size:11px;line-height:1.6;color:#6b8297;margin-top:7px}
+.experience-timeline{display:grid;gap:12px}
+.experience-entry{min-width:0;border:1px solid #e4edf6;border-radius:10px;background:#fff;overflow:hidden}
+.experience-entry>summary{display:flex;align-items:center;gap:13px;padding:16px;cursor:pointer;list-style:none;transition:background .25s var(--ease)}
+.experience-entry>summary::-webkit-details-marker{display:none}
+.experience-entry>summary:hover{background:#f7fbff}
+.experience-entry>summary:focus-visible{outline:2px solid var(--blue);outline-offset:-3px;border-radius:9px}
+.experience-marker{width:34px;height:34px;display:grid;place-items:center;flex:none;border-radius:9px;background:#edf6ff;color:var(--blue)}
+.experience-marker .icon{width:16px;height:16px}
+.experience-title{display:block;min-width:0;flex:1}
+.experience-title strong{display:block;font-size:12px;line-height:1.4;color:var(--ink)}
+.experience-title>span{display:block;margin-top:5px;color:#7b91a4;font-size:10px;line-height:1.5}
+.experience-period{font-size:9px;color:#6f8ba5;white-space:nowrap}
+.experience-toggle{font-size:19px;line-height:1;color:#7197b8;width:15px;text-align:center;transition:transform .25s var(--ease)}
+.experience-entry[open] .experience-toggle{transform:rotate(45deg)}
+.experience-body{padding:0 24px 19px 63px;color:#5f7991}
+.experience-body>p{font-size:11px;line-height:1.7;color:#456580}
+.experience-body ul{margin:12px 0 14px;padding-left:16px;display:grid;gap:7px;list-style:disc}
+.experience-body li{font-size:10px;line-height:1.75;padding-left:3px}
+.experience-body .skill-chips{margin:0}
+.experience-body .skill-chips span{font-size:9px;white-space:normal}
+.example-skill-preview{display:block;position:relative;width:100%;padding:0;text-align:left;overflow:hidden;border:1px solid #e1edf8;border-radius:9px;background:#eef7ff;margin-top:11px}
+.example-skill-preview>img{display:block;width:100%;height:auto;aspect-ratio:1.8;object-fit:cover;transition:transform .65s var(--ease)}
+.example-skill-preview:hover>img{transform:scale(1.04)}
+.example-skill-preview:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+.example-skill-label{display:flex;align-items:center;gap:9px;background:#f9fcff;padding:12px;color:#355876}
+.example-skill-label .skill-mark{width:16px;height:20px}
+.example-skill-label strong{font-size:10px;font-weight:500;flex:1}
+.example-skill-label>.icon{width:13px;height:13px;color:var(--blue)}
+.example-experience-link{display:flex;align-items:center;gap:8px;width:100%;font-size:10px;text-align:left;color:#6183a1;margin-top:17px;padding:8px 0;min-height:36px}
+.example-experience-link>.icon{width:14px;height:14px;color:#669ed3}
+.example-experience-link>span{margin-left:auto;color:var(--blue)}
+.example-experience-link:hover{color:var(--blue)}
+.example-card .example-experience-link+.example-link{margin-top:9px}
+.dialog-profile .skill-spotlight-copy h4{font-size:20px}
+.dialog-profile .skill-spotlight-copy p,.dialog-profile .skill-detail p,.dialog-profile .experience-heading p,.dialog-profile .experience-body>p,.dialog-profile .experience-body li{font-size:12px}
+.dialog-profile .skill-detail h4,.dialog-profile .experience-title strong{font-size:14px}
+.dialog-profile .experience-title>span,.dialog-profile .experience-period,.dialog-profile .experience-body .skill-chips span{font-size:10px}
+@media(max-width:680px){
+ .profile-skills,.profile-experience{gap:15px}
+ .skill-spotlight{grid-template-columns:1fr}
+ .skill-spotlight>img{aspect-ratio:16/9;min-height:0;height:auto}
+ .skill-spotlight-copy{padding:19px}
+ .skill-spotlight-copy h4,.dialog-profile .skill-spotlight-copy h4{font-size:19px}
+ .skill-spotlight-copy p,.dialog-profile .skill-spotlight-copy p{font-size:12px}
+ .tool-badge{font-size:11px;margin-bottom:10px}
+ .skill-detail-grid{grid-template-columns:1fr;gap:9px}
+ .skill-detail{display:grid;grid-template-columns:34px minmax(0,1fr);column-gap:13px;padding:15px}
+ .skill-detail .skill-symbol{grid-row:1/3}
+ .skill-detail h4,.dialog-profile .skill-detail h4{margin:0;font-size:13px}
+ .skill-detail p,.dialog-profile .skill-detail p{font-size:11px;margin-top:4px}
+ .experience-heading{grid-template-columns:1fr;gap:2px;padding:9px}
+ .experience-heading>img{height:auto;aspect-ratio:2;object-fit:cover}
+ .experience-heading>div{padding:13px 8px}
+ .experience-heading h4{font-size:18px}
+ .experience-heading p{font-size:12px}
+ .experience-eyebrow{font-size:8px}
+ .experience-entry>summary{display:grid;grid-template-columns:30px minmax(0,1fr) 15px;gap:4px 10px;padding:14px 12px}
+ .experience-marker{width:30px;height:30px;grid-row:1/3;align-self:start}
+ .experience-title{grid-column:2;grid-row:1}
+ .experience-title strong,.dialog-profile .experience-title strong{font-size:12px}
+ .experience-title>span,.dialog-profile .experience-title>span{font-size:10px}
+ .experience-period{grid-column:2;grid-row:2;margin-top:3px;font-size:9px}
+ .experience-toggle{grid-column:3;grid-row:1/3}
+ .experience-body{padding:0 15px 18px}
+ .experience-body>p,.dialog-profile .experience-body>p{font-size:12px}
+ .experience-body li,.dialog-profile .experience-body li{font-size:11px}
+ .experience-body .skill-chips span{font-size:9px;padding:6px 8px}
+ .example-skill-label{padding:13px}
+ .example-skill-label strong{font-size:12px}
+ .example-experience-link{font-size:12px;min-height:44px}
+ .profile-skills .profile-tab-title,.profile-experience .profile-tab-title{font-size:11px;align-items:baseline;flex-wrap:wrap;gap:5px}
+ .profile-skills .profile-tab-title small,.profile-experience .profile-tab-title small{font-size:8px}
+}
+@media(prefers-reduced-motion:reduce){.example-skill-preview>img,.experience-toggle,.experience-entry>summary{transition:none}}

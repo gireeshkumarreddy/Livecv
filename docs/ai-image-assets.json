@@ -1,0 +1,44 @@
+{
+  "generator": "Built-in image generation",
+  "requested_resolution": [
+    3840,
+    2160
+  ],
+  "actual_resolution": [
+    1672,
+    941
+  ],
+  "encoding": "Lossless WebP; decoded pixels verified identical to generated PNG output. No resampling.",
+  "assets": [
+    {
+      "id": "aanya",
+      "asset": "dist/assets/portrait-aanya-ai.webp",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-resolution profile photograph for the existing LiveCV landing page.\nInput image: reference sheet with three fictional professional portraits. Use ONLY the woman in the LEFT panel as the subject.\nCreate ONE standalone photorealistic portrait of this same young Indian woman with dark, loose wavy hair, a friendly subtle smile and navy blue blouse. Preserve her face, hairstyle, clothing and soft pale blue-gray studio background closely.\nComposition: landscape 16:9 image, centered head-and-shoulders portrait. Keep her face and shoulders within the central square so it can be cropped to a square avatar. Natural skin texture, individual hair strands, lifelike eyes, soft window light, clean professional photography, crisp detail.\nOutput resolution: native 4K, exactly 3840 pixels wide by 2160 pixels high. Render at the highest available quality. This is the final production asset, not a thumbnail.\nNo other people, collage, borders, panels, letters, watermark or webpage UI. Only improve detail and resolution; maintain the existing understated photographic style."
+    },
+    {
+      "id": "noah",
+      "asset": "dist/assets/portrait-noah-ai.webp",
+      "prompt": "Use case: identity-preserve. Create a single standalone professional portrait of the fictional man in the MIDDLE panel of the reference sheet: friendly young man with curly brown hair, light stubble, charcoal-gray crew-neck shirt. Closely match his face, hairstyle, clothes and understated pale blue-gray background. Natural soft light, lifelike skin and fine hair detail, premium editorial photography. Center his head and shoulders within a landscape 16:9 composition with his face contained in the central square for avatar cropping. Native 4K 3840x2160 resolution, highest available detail. Only one person, no collage, no panels, no text, no border, no watermark. This replaces the existing website image without changing its subject or visual style."
+    },
+    {
+      "id": "maya",
+      "asset": "dist/assets/portrait-maya-ai.webp",
+      "prompt": "Use case: identity-preserve. Create a single standalone professional portrait of the fictional woman in the RIGHT panel of the reference sheet: friendly young East Asian woman with straight dark shoulder-length hair, white blouse and gentle smile. Closely match her face, hairstyle, clothes and understated pale blue-gray background. Natural soft light, lifelike skin and fine hair detail, premium editorial photography. Center her head and shoulders within a landscape 16:9 composition with her face contained in the central square for avatar cropping. Native 4K 3840x2160 resolution, highest available detail. Only one person, no collage, no panels, no text, no border, no watermark. This replaces the existing website image without changing its subject or visual style."
+    },
+    {
+      "id": "finance",
+      "asset": "dist/assets/project-finance-ai.webp",
+      "prompt": "Use case: product-mockup. Create ONE standalone high-resolution landscape photograph matching the LEFT tile of the reference sheet, a minimal fintech app case-study thumbnail. A modern slim dark-framed smartphone lies diagonally on a warm off-white desk. Screen has an elegant blue and white finance dashboard, one simple blue chart and tidy light UI cards. A fresh green botanical leaf enters at upper left. Closely preserve the original calm cream, pale blue, navy and fresh green palette and composition. Soft realistic daylight, clean physical shadows, sharp screen, refined product photography. Landscape 16:9 composition, central smartphone fills about 60 percent of frame and remains legible in a center-cropped thumbnail. Native 4K 3840x2160 resolution, highest available quality. No surrounding website, no collage, no multiple panels, no watermark, no marketing headline. Any small interface labels are secondary; prioritize attractive clear graphic hierarchy."
+    },
+    {
+      "id": "analytics",
+      "asset": "dist/assets/project-analytics-ai.webp",
+      "prompt": "Use case: product-mockup. Create ONE standalone high-resolution landscape image matching the MIDDLE tile of the reference sheet: a refined 3D product illustration of floating pale blue and white analytics dashboard cards on a clean soft sky-blue background. Multiple thin rounded UI cards float at gentle angles, with minimal blue charts, subtle tiny data rows and tasteful soft shadows. Preserve the reference palette, layout and calm technology style. Sharp edges and beautifully detailed surfaces, subtle depth and ambient studio lighting. Landscape 16:9 composition, keep the main cluster inside the central 75 percent for responsive cropping. Native 4K 3840x2160 resolution, highest available quality. No surrounding website, no collage, no multiple panels, no watermark, no marketing headline. Favor crisp simple charts over dense or prominent text."
+    },
+    {
+      "id": "team",
+      "asset": "dist/assets/project-team-ai.webp",
+      "prompt": "Use case: photorealistic-natural. Create ONE standalone high-resolution photograph matching the RIGHT tile of the reference sheet: a friendly diverse team of four young professionals collaborating around a desk in a bright modern studio. Match the reference atmosphere, understated business-casual clothing, thoughtful relaxed interaction, shared laptop and papers, fresh daylight and soft muted colors. Natural believable hands and faces, realistic skin texture, candid premium editorial photography. Landscape 16:9 composition with all four people grouped near center, enough context for a project thumbnail. Native 4K 3840x2160 resolution, highest available quality. No collage, no panels, no surrounding website, no text, no watermark. Preserve the approved reference's calm professional style."
+    }
+  ]
+}

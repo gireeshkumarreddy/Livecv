@@ -1,0 +1,22 @@
+{
+  "generator": "Built-in image generation",
+  "actualResolution": [
+    1672,
+    941
+  ],
+  "encoding": "Lossless WebP; decoded pixels verified identical to generated output.",
+  "assets": [
+    {
+      "asset": "/workspace/sites/livecv-career/dist/assets/skill-design-ai.webp",
+      "prompt": "Use case: product-mockup. Create one premium landscape 16:9 illustration for the Figma skills section of a product designer's portfolio. Show an angled open laptop displaying a visual UI design canvas with three elegant mobile app frames, small colored component swatches, and subtle curved prototype connector lines. Include a floating rounded component card beside it. This is a conceptual design workspace, not an exact software screenshot. Pale icy-blue studio background, white surfaces, navy details and small tasteful coral, violet, mint and blue accents inspired by design tools. Very clean realistic 3D product rendering, soft daylight, beautifully crisp edges, gentle shadow, abundant calm space, all objects centered and entirely inside frame. No readable text, no watermark, no person, no hands, no logos, no panels or collage. High detail at the highest available resolution; visually match a refined soft-blue SaaS landing page."
+    },
+    {
+      "asset": "/workspace/sites/livecv-career/dist/assets/skill-engineering-ai.webp",
+      "prompt": "Use case: product-mockup. Create one premium landscape 16:9 illustration for the Python and engineering skills section of a graduate engineer's portfolio. Show an angled open laptop displaying a dark navy code editor with understated syntax-colored code-like strokes, beside a small elegant development board with one tiny sensor and a simple transparent line-chart display. Python-inspired restrained blue and yellow accents. This is conceptual software and engineering imagery, not a precise technical schematic. Pale icy-blue studio background, white desk surface, soft daylight, crisp realistic product rendering, gentle shadows. Arrange the laptop and electronics as one coherent centered scene, fully inside frame. No readable text, no watermark, no person, no hands, no logos, no panels or collage. High detail at the highest available resolution; visually match a refined soft-blue SaaS landing page."
+    },
+    {
+      "asset": "/workspace/sites/livecv-career/dist/assets/skill-growth-ai.webp",
+      "prompt": "Use case: product-mockup. Create one premium landscape 16:9 illustration for the growth marketing and analytics skills section of a marketer's portfolio. Show an angled open laptop displaying an elegant white analytics dashboard with a blue trend chart, small teal and coral chart accents and an uncluttered dashboard grid. Beside it float a minimal content calendar card and two refined abstract campaign creative cards. Conceptual marketing-work imagery, not a real data report or precise software screenshot. Pale icy-blue studio background, white surfaces, soft daylight, crisp realistic 3D product rendering and gentle shadows. Keep the coherent scene centered and wholly inside frame, calm and spacious. No readable text, no watermark, no person, no hands, no logos, no panels or collage. High detail at the highest available resolution; visually match a refined soft-blue SaaS landing page."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# Local snapshot of the site before the redesign; not part of the published site.
+dist-original/
+
+# OS clutter
+Thumbs.db
+desktop.ini
+.DS_Store

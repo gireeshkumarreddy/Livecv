@@ -1,0 +1,25 @@
+/* Home page intro: resumes fly into the "CV" mark, "Live" joins it, and the logo lands in the header.
+   The overlay only shows while <html> has .intro-playing (set in the page head, played by intro.js). */
+.intro{display:none}
+html.intro-playing .intro{display:block;position:fixed;inset:0;z-index:300;cursor:pointer;animation:intro-failsafe .01s 7s forwards}
+html.intro-playing .site-header .brand{visibility:hidden;animation:brand-failsafe .01s 7s forwards}
+@keyframes intro-failsafe{to{visibility:hidden;opacity:0}}
+@keyframes brand-failsafe{to{visibility:visible}}
+
+.intro-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,#fff 0%,#eef7ff 55%,#d9edff 100%)}
+
+/* Resume cards: centred, then moved by intro.js with transforms only. */
+.intro-card{position:absolute;left:50%;top:50%;width:190px;height:248px;margin:-124px 0 0 -95px;padding:40px 20px 18px;border-radius:12px;background:#fff;box-shadow:0 24px 60px #1d4f8a29;opacity:0;will-change:transform,opacity}
+.intro-file{position:absolute;left:14px;top:-14px;display:flex;align-items:center;gap:6px;padding:5px 9px;border-radius:8px;background:#fff;box-shadow:0 6px 16px #1d4f8a1f;font-size:10px;font-weight:500;color:#5b6b80;white-space:nowrap}
+.intro-file b{padding:1px 5px;border-radius:4px;background:#e5484d;color:#fff;font-size:8px;font-weight:700}
+.intro-card strong{display:block;width:62%;height:12px;border-radius:3px;background:#2b3d55}
+.intro-card em{display:block;width:40%;height:7px;margin:8px 0 20px;border-radius:3px;background:#9fb3c8}
+.intro-card i{display:block;height:6px;margin-top:9px;border-radius:3px;background:#e6ebf1}
+.intro-card i.short{width:65%}
+.intro-card-b strong{background:#0663fc}
+
+/* The logo, as two layers of the same image split between "Live" and "CV". */
+.intro-logo{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.intro-logo img{position:absolute;inset:0;display:block;width:100%;height:100%}
+.intro-live{opacity:0;clip-path:inset(0 46.9% 0 53.1%)}
+.intro-cv{opacity:0;clip-path:inset(0 0 0 53.1%);transform-origin:76.9% 50%}

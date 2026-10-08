@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eef7ff">
+  <meta name="description" content="LiveCV turns your resume into one permanent, live link. Build an ATS-friendly resume for free, update it once, and everyone you share it with sees the latest version.">
+  <meta property="og:title" content="LiveCV — Your career is bigger than a resume.">
+  <meta property="og:description" content="LiveCV turns your resume into one permanent, live link. Build an ATS-friendly resume for free, update it once, and everyone you share it with sees the latest version.">
+  <title>LiveCV — Your career is bigger than a resume.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="font" href="assets/dm-sans-latin.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/portrait-aanya-ai.webp" type="image/webp">
+  <link rel="preload" as="image" href="assets/livecv-launch-poster.jpg">
+  <link rel="preload" as="image" href="assets/livecv-logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="profile-details.css">
+  <link rel="stylesheet" href="motion.css">
+  <link rel="stylesheet" href="intro.css">
+  <script>if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('js-motion');</script>
+  <script>if(document.documentElement.classList.contains('js-motion') && 'animate' in document.documentElement)document.documentElement.classList.add('intro-playing');</script>
+  <script src="app.js" defer></script>
+  <script src="motion.js" defer></script>
+  <script src="video-player.js" defer></script>
+  <script src="intro.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="intro" aria-hidden="true">
+ <div class="intro-bg"></div>
+ <div class="intro-card intro-card-a"><span class="intro-file"><b>PDF</b>resume_v1.pdf</span><strong></strong><em></em><i></i><i></i><i class="short"></i><i></i><i class="short"></i></div>
+ <div class="intro-card intro-card-b"><span class="intro-file"><b>PDF</b>resume_final.pdf</span><strong></strong><em></em><i></i><i></i><i class="short"></i><i></i><i class="short"></i></div>
+ <div class="intro-logo"><img class="intro-cv" src="assets/livecv-logo.png" alt="" width="902" height="216"><img class="intro-live" src="assets/livecv-logo.png" alt="" width="902" height="216"></div>
+</div>
+<svg class="svg-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+<symbol id="i-up" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+<symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><path d="m10 13 4-4m-6 6-2 2a4 4 0 0 1-6-6l5-5a4 4 0 0 1 6 0m2 3 2-2a4 4 0 0 1 6 6l-5 5a4 4 0 0 1-6 0" transform="translate(2 0) scale(.85)"/></symbol>
+<symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9zM14 3v6h6M8 13h8M8 17h6"/></symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="14" rx="3"/><path d="M8 7V4h8v3M3 12c5 4 13 4 18 0M12 12v5"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+<symbol id="i-skill" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5zm-9 9 9 5 9-5m-18 5 9 5 9-5"/></symbol>
+<symbol id="i-school" viewBox="0 0 24 24"><path d="m2 8 10-5 10 5-10 5zM6 10v7c3 3 9 3 12 0v-7M22 8v8"/></symbol>
+<symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="m8 12-2 9 6-3 6 3-2-9"/></symbol>
+<symbol id="i-goal" viewBox="0 0 24 24"><circle cx="11" cy="13" r="8"/><circle cx="11" cy="13" r="4"/><path d="m11 13 9-10m-5 1 5-1 1 5"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 7 9 7 9-7"/></symbol>
+<symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 20v-3a6 6 0 0 1 12 0v3M16 4a3 3 0 0 1 0 6m3 10v-3a5 5 0 0 0-3-4"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-location" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5z"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4m-5 5 5-5 5 5M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></symbol>
+</defs></svg>
+
+<header class="site-header" id="top">
+ <div class="nav-wrap container">
+  <a class="brand" href="index.html" aria-label="LiveCV home"><img src="assets/livecv-logo-original.jpeg" alt="LiveCV" width="2048" height="1152"></a>
+  <nav class="desktop-nav" aria-label="Main navigation"><span class="nav-pill" aria-hidden="true"></span><a href="index.html" aria-current="page">Home</a><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="for-institutions.html">For Institutions</a></nav>
+  <div class="nav-actions"><a class="login-link" href="https://livecv.dev/login" target="_blank" rel="noopener">Log in</a><a class="button button-small" href="https://livecv.dev/build" target="_blank" rel="noopener">Create your LiveCV <span aria-hidden="true">↗</span></a><button class="menu-toggle" aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false"><span></span><span></span></button></div>
+ </div>
+ <nav class="mobile-nav container" id="mobile-nav" aria-label="Mobile navigation" hidden><a href="index.html" aria-current="page">Home</a><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="for-institutions.html">For Institutions</a><a href="cvid.html">Look up a CVID</a><a href="https://livecv.dev/login" target="_blank" rel="noopener">Log in to LiveCV ↗</a></nav>
+</header>
+
+<main id="main">
+<section class="hero" aria-labelledby="hero-title">
+ <div class="hero-light"></div>
+ <div class="container hero-copy reveal stagger">
+  <p class="eyebrow">YOUR RESUME, AS ONE LIVE LINK</p>
+  <h1 id="hero-title">Your career is bigger<br>than a resume.</h1>
+  <p class="lead">LiveCV turns your resume into one permanent, live link.<br class="desktop-break"> Update it once, and everyone sees the latest version.</p>
+  <div class="button-row"><a href="https://livecv.dev/build" class="button" target="_blank" rel="noopener">Create your LiveCV <svg class="icon"><use href="#i-arrow"/></svg></a><a class="button button-white" href="#how-it-works"><span class="play-tiny" aria-hidden="true">▶</span> See how it works</a></div>
+  <p class="microcopy">Free ATS-friendly resume builder · No account needed to start · Live links and analytics on paid plans</p>
+ </div>
+ <div class="hero-stage container reveal" style="--delay:120ms">
+  <div class="resume-paper" aria-hidden="true"><strong>Aanya Rao</strong><p>Product designer</p><div class="paper-rule"></div><b>EXPERIENCE</b><span></span><span></span><span class="short"></span><b>EDUCATION</b><span></span><span class="short"></span><b>SKILLS</b><span></span></div>
+  <svg class="hand-arrow" viewBox="0 0 170 85" aria-hidden="true"><path d="M8 73C25 7 105 5 151 29M139 12l15 20-24 2"/></svg>
+  <div class="profile-window hero-profile" data-profile="aanya" data-variant="hero"></div>
+ </div>
+ <svg class="hero-waves" viewBox="0 0 1440 430" preserveAspectRatio="none" aria-hidden="true"><path fill="#e0f2ff" d="M0 70C105 125 56 370 252 350c182-20 413-52 597-127s356-137 591-223v430H0Z"/><path fill="#f0f8ff" d="M0 305c119-95 262-57 367-25s183 85 375 90 316-95 436-113 169-36 262-8v181H0Z"/><path fill="#fff" opacity=".76" d="M0 369c250-170 321-96 474-40s290 96 441 64 314-25 525-73v110H0Z"/></svg>
+</section>
+
+<section id="video" class="video-section" data-color-switch aria-label="LiveCV launch video">
+ <div class="video-pin">
+  <div class="video-stage">
+   <div class="video-frame">
+    <video class="launch-video" autoplay muted loop playsinline preload="auto" poster="assets/livecv-launch-poster.jpg" aria-label="LiveCV in 30 seconds: what it is, why it is different and how to start"><source src="assets/livecv-launch.mp4" type="video/mp4"></video>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section problem-section" aria-labelledby="problem-title">
+ <div class="container problem-layout">
+  <div class="section-copy reveal stagger"><p class="eyebrow">THE PROBLEM WITH PDFS</p><h2 id="problem-title">A PDF goes stale<br>the moment you send it.</h2><p>Every update means sending a new file. Recruiters keep the old one, and you never know if anyone opened it.</p></div>
+  <div class="transformation reveal" style="--delay:120ms">
+   <div class="before"><p class="small-label">A PDF resume</p><div class="paper-small"><strong>Aanya Rao</strong><small>Product designer</small><div class="skeleton-lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
+   <svg class="transform-arrow icon"><use href="#i-arrow"/></svg>
+   <div class="after"><p class="small-label">Your LiveCV</p><button class="mini-identity" data-example="aanya" aria-label="Open Aanya's example profile"><span class="mini-person"><span class="portrait person-0" role="img" aria-label="Fictional designer Aanya Rao"></span><span><strong>Aanya Rao</strong><small>Product designer</small><span class="tiny-line"></span></span></span><span class="mini-projects"><span class="project-image project-0"></span><span class="project-image project-1"></span><span class="project-image project-2"></span></span><span class="mini-open">Explore this example <span>↗</span></span></button></div>
+  </div>
+ </div>
+</section>
+
+<section id="product" class="identity-section section" aria-labelledby="identity-title">
+ <div class="container identity-layout">
+  <div class="section-copy reveal stagger"><p class="eyebrow">WHAT IS LIVECV?</p><h2 id="identity-title">Meet your<br>Digital Career Identity.</h2><p>Your <strong>GID</strong> (Global ID) is one permanent link, like livecv.work/id/GID-12345-67890, that always shows the latest version of you: experience, projects, skills, education and goals.</p><p>Under it, you publish tailored <strong>CVIDs</strong>: a version of your resume for each role you apply to, each with its own short link.</p></div>
+  <div class="identity-orbit reveal" style="--delay:120ms">
+   <div class="orbit-ring" aria-hidden="true"></div>
+   <button class="orbit-label orbit-1 active" data-identity="experience" aria-pressed="true"><svg class="icon"><use href="#i-briefcase"/></svg>Experience</button>
+   <button class="orbit-label orbit-2" data-identity="projects" aria-pressed="false"><svg class="icon"><use href="#i-grid"/></svg>Projects</button>
+   <button class="orbit-label orbit-3" data-identity="skills" aria-pressed="false"><svg class="icon"><use href="#i-skill"/></svg>Skills</button>
+   <button class="orbit-label orbit-4" data-identity="education" aria-pressed="false"><svg class="icon"><use href="#i-school"/></svg>Education</button>
+   <button class="orbit-label orbit-5" data-identity="achievements" aria-pressed="false"><svg class="icon"><use href="#i-award"/></svg>Achievements</button>
+   <button class="orbit-label orbit-6" data-identity="goals" aria-pressed="false"><svg class="icon"><use href="#i-goal"/></svg>Goals</button>
+   <div class="identity-center"><div class="identity-center-top"><span class="portrait person-0"></span><div><strong>Aanya Rao</strong><small>Product designer</small><span class="live-status"><i></i> Living identity</span></div></div><div class="identity-detail" aria-live="polite"><span id="identity-caption">Experience</span><strong id="identity-detail-title">Product designer</strong><small id="identity-detail-copy">A place for the work that’s shaped you.</small></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="comparison-section section" aria-labelledby="comparison-title"><div class="container comparison-layout">
+ <div class="reveal"><p class="eyebrow">THE OLD WAY VS. THE LIVECV WAY</p><h2 id="comparison-title">A file captures a moment.<br>LiveCV moves with you.</h2></div>
+ <div class="comparison-pair reveal stagger" style="--delay:120ms"><article class="comparison-card muted"><svg class="icon"><use href="#i-file"/></svg><div><h3>PDF resume</h3><ul><li>Send a new file every time you update</li><li>Recruiters keep stale, outdated versions</li><li>No idea if anyone opened it</li></ul></div></article><article class="comparison-card live"><div><span class="wordmark">Live<span>CV</span></span><ul><li><span>✓</span>One permanent link for your whole career</li><li><span>✓</span>Update once, everyone sees it instantly</li><li><span>✓</span>See who opened it, from where and when</li></ul></div></article></div>
+</div></section>
+<section id="how-it-works" class="section steps-section start-section" aria-labelledby="steps-title">
+ <div class="container">
+  <div class="section-heading centered reveal stagger"><p class="eyebrow">HOW IT WORKS · FREE TO START</p><h2 id="steps-title">Make it yours. Keep it growing.</h2><p>Your story is already there. Upload your resume or start a new one, and give it a place to come together.</p></div>
+  <div class="start-layout">
+   <div class="start-box reveal">
+    <span class="start-step">STEP 01 · START YOUR STORY</span>
+    <h3>Start your LiveCV</h3>
+    <p>Upload the resume you already have, or build a new one. It's free, and you don't need an account to start.</p>
+    <div class="start-options">
+     <a class="start-option surface" href="https://livecv.dev/" target="_blank" rel="noopener"><span class="start-icon"><svg class="icon"><use href="#i-upload"/></svg></span><span><strong>Upload your resume</strong><small>PDF or Word file (.pdf, .doc, .docx)</small></span><svg class="icon start-arrow"><use href="#i-arrow"/></svg></a>
+     <a class="start-option surface" href="https://livecv.dev/build" target="_blank" rel="noopener"><span class="start-icon"><svg class="icon"><use href="#i-file"/></svg></span><span><strong>Create a new resume</strong><small>Start from scratch with the free builder</small></span><svg class="icon start-arrow"><use href="#i-arrow"/></svg></a>
+    </div>
+    <p class="start-foot">ATS-friendly layouts · Export a PDF anytime · No card required</p>
+   </div>
+   <ol class="start-steps">
+    <li class="start-row surface reveal" style="--delay:80ms"><span class="number">02</span><div><h3>Make it yours</h3><p>Edit your headline, experience, projects and skills, and see your resume update as you type.</p></div><a class="button button-white" href="https://livecv.dev/build" target="_blank" rel="noopener">Open the builder <svg class="icon"><use href="#i-up"/></svg></a></li>
+    <li class="start-row surface reveal" style="--delay:160ms"><span class="number">03</span><div><h3>Share one link</h3><p>Publish your LiveCV identity and share one permanent link everywhere. Live sharing is available on paid plans.</p></div><a class="button button-white" href="pricing.html">See plans <svg class="icon"><use href="#i-arrow"/></svg></a></li>
+    <li class="start-row surface reveal" style="--delay:240ms"><span class="number">04</span><div><h3>Keep evolving</h3><p>Come back any time to add projects, experience and skills. Everyone with your link sees the latest version.</p></div><a class="button button-white" href="https://livecv.dev/login" target="_blank" rel="noopener">Log in <svg class="icon"><use href="#i-up"/></svg></a></li>
+   </ol>
+  </div>
+ </div>
+</section>
+
+
+<section class="section features-section" aria-labelledby="features-title"><div class="container">
+ <div class="section-heading centered reveal stagger"><p class="eyebrow">WHAT YOU GET WITH LIVECV</p><h2 id="features-title">The right tools. A stronger story.</h2><p>Build a resume for free. Upgrade when you want a live link, tailored applications, or analytics behind it.</p></div>
+ <div class="tools-grid">
+  <article class="tool-card surface reveal">
+   <div class="tool-top"><span class="tool-icon"><svg class="icon"><use href="#i-file"/></svg></span><span class="tool-tag">FREE</span></div>
+   <h3>Build with clarity</h3>
+   <p>Create your resume from scratch or import the one you have. Edit, preview and export to PDF anytime.</p>
+   <ul class="tool-points"><li><span class="tool-tick" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>ATS-compliant layouts</li><li><span class="tool-tick" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>Live preview as you type</li><li><span class="tool-tick" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>One-click PDF export</li></ul>
+   <a class="button" href="https://livecv.dev/build" target="_blank" rel="noopener">Start building free <svg class="icon"><use href="#i-arrow"/></svg></a>
+  </article>
+  <article class="tool-card surface reveal" style="--delay:100ms">
+   <div class="tool-top"><span class="tool-icon"><svg class="icon"><use href="#i-link"/></svg></span><span class="tool-tag paid">PAID PLANS</span></div>
+   <h3>Share a live identity</h3>
+   <p>Get your permanent GID and share one LiveCV link in your applications, portfolio and everyday work.</p>
+   <ul class="tool-points"><li><span class="tool-tick" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>One permanent GID for life</li><li><span class="tool-tick" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>Live CVID links with a QR card</li><li><span class="tool-tick" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>Update once, everyone sees it</li></ul>
+   <a class="button button-white" href="pricing.html">See plans <svg class="icon"><use href="#i-arrow"/></svg></a>
+  </article>
+  <article class="tool-card surface reveal" style="--delay:200ms">
+   <div class="tool-top"><span class="tool-icon"><svg class="icon"><use href="#i-spark"/></svg></span><span class="tool-tag paid">PAID PLANS</span></div>
+   <h3>Tailor with AI and learn from views</h3>
+   <p>Get tailored suggestions for the roles you're applying to and see how people engage with your profile.</p>
+   <ul class="tool-points"><li><span class="tool-tick" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>Resumes and cover letters tailored to each job</li><li><span class="tool-tick" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>Career roadmap and interview prep</li><li><span class="tool-tick" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>See who opened your CVID, from where and when</li></ul>
+   <a class="button button-white" href="features.html">Explore features <svg class="icon"><use href="#i-arrow"/></svg></a>
+  </article>
+ </div>
+ <p class="tools-note reveal">Start free. Upgrade if it earns it. <a href="pricing.html">Compare plans</a></p>
+</div></section>
+
+<section id="examples" class="section examples-section" aria-labelledby="examples-title"><div class="container">
+ <div class="section-heading heading-between reveal stagger"><div><p class="eyebrow">SEE WHAT A LIVECV LOOKS LIKE</p><h2 id="examples-title">Don’t just send your CV.<br>Let people experience it.</h2></div><p class="small-label">Illustrative example profiles · Open one to explore</p></div>
+ <div class="examples-grid" id="examples-grid"></div>
+</div></section>
+
+<section class="section sharing-section" aria-labelledby="sharing-title"><div class="container sharing-layout">
+ <div class="reveal stagger"><p class="eyebrow">SHARE IT ANYWHERE</p><h2 id="sharing-title">One link. Your entire career.</h2><p>Put your link everywhere you apply, network or introduce yourself. When you update your LiveCV, every place you’ve shared it stays current.</p><p class="example-link-label">Your link will look like this</p><div class="copy-field"><svg class="icon"><use href="#i-link"/></svg><span>livecv.work/id/GID-12345-67890</span><a class="button button-small" href="pricing.html">Get your link <svg class="icon"><use href="#i-arrow"/></svg></a></div></div>
+ <div class="share-destinations reveal stagger" style="--delay:120ms"><button data-share="email"><span class="icon-circle"><svg class="icon"><use href="#i-mail"/></svg></span><strong>Email</strong><small>In outreach<br>and follow-ups</small></button><button data-share="linkedin"><span class="icon-circle"><span class="linkedin-mark">in</span></span><strong>LinkedIn</strong><small>On your profile<br>and posts</small></button><button data-share="applications"><span class="icon-circle"><svg class="icon"><use href="#i-file"/></svg></span><strong>Applications</strong><small>On job<br>applications</small></button><button data-share="recruiter"><span class="icon-circle"><svg class="icon"><use href="#i-people"/></svg></span><strong>Recruiter</strong><small>When someone<br>asks for your CV</small></button></div>
+</div></section>
+
+<section id="for-you" class="section audience-section" aria-labelledby="audience-title"><div class="container">
+ <div class="section-heading reveal stagger"><p class="eyebrow">WHO IT’S FOR</p><h2 id="audience-title">For every next chapter.</h2><p>Wherever you are in your career, LiveCV keeps your story in one place and up to date.</p></div>
+ <div class="audience-grid reveal stagger"><button class="audience-card active" data-audience="students" aria-pressed="true"><span class="icon-circle"><svg class="icon"><use href="#i-school"/></svg></span><span><strong>Students</strong><small>Show your projects, skills and potential.</small></span></button><button class="audience-card" data-audience="graduates" aria-pressed="false"><span class="icon-circle"><svg class="icon"><use href="#i-award"/></svg></span><span><strong>Graduates</strong><small>Turn your education and projects into opportunities.</small></span></button><button class="audience-card" data-audience="professionals" aria-pressed="false"><span class="icon-circle"><svg class="icon"><use href="#i-briefcase"/></svg></span><span><strong>Professionals</strong><small>Keep your career identity growing with you.</small></span></button><button class="audience-card" data-audience="freelancers" aria-pressed="false"><span class="icon-circle"><svg class="icon"><use href="#i-people"/></svg></span><span><strong>Freelancers</strong><small>Present your work and attract the right clients.</small></span></button></div>
+ <div class="audience-detail reveal" aria-live="polite"><span id="audience-copy">Your first opportunity starts with what you’ve already built. Bring your coursework, personal projects and skills into one story.</span><a href="https://livecv.dev/build" target="_blank" rel="noopener" id="audience-cta">Start your story <span>↗</span></a></div>
+ <p class="audience-more reveal">Running a college placement cell? <a href="for-institutions.html">See LiveCV for Institutions →</a></p>
+</div></section>
+
+<section id="faq" class="section faq-section" aria-labelledby="faq-title"><div class="container">
+ <div class="section-heading heading-between reveal stagger"><div><p class="eyebrow">FREQUENTLY ASKED QUESTIONS</p><h2 id="faq-title">Know what happens next.</h2></div><button class="text-link" id="expand-faq" aria-expanded="false">View all answers <span>＋</span></button></div>
+ <div class="faq-grid reveal stagger"><details open><summary>Can I start for free?<span></span></summary><p>Yes. Build your ATS-friendly resume and export it as a PDF for free, with no account needed to start. Live links, analytics and AI tools are on paid plans.</p><a href="pricing.html">See plans →</a></details><details><summary>What is a GID?<span></span></summary><p>Your Global ID is your permanent professional identity on LiveCV: one stable, lifetime link, like livecv.work/id/GID-12345-67890, that always points to the most current version of you. You get one GID, and it never expires.</p></details><details><summary>What’s a CVID?<span></span></summary><p>A CVID is a tailored version of your resume, such as one for design roles or one for a specific company, with its own short link. Your CVIDs sit under your GID, and when you update one, everyone holding that link sees the latest version.</p></details><details><summary>How is this different from sending a PDF?<span></span></summary><p>A PDF is a frozen snapshot that starts going stale the moment you send it. Your LiveCV link is live: update once and every recruiter who opens it sees the latest version. You can still export a PDF whenever an application asks for one.</p></details><details><summary>Can I see who viewed my resume?<span></span></summary><p>Yes, on paid plans. You’ll see how many times each CVID was opened, from which locations, on which devices and when, so you can follow up at the right moment.</p></details><details><summary>What does ATS-compliant mean?<span></span></summary><p>Most companies screen resumes with an Applicant Tracking System before a person reads them. LiveCV creates clean, structured resumes that these systems can read, without the graphics or columns that confuse them.</p></details></div>
+</div></section>
+
+<section class="final-cta section" aria-labelledby="final-title"><div class="container centered reveal stagger"><p class="eyebrow">GIVE YOUR CAREER ROOM TO GROW</p><h2 id="final-title">Your next opportunity<br>deserves more than a PDF.</h2><div class="button-row"><a class="button" href="https://livecv.dev/build" target="_blank" rel="noopener">Create your LiveCV <svg class="icon"><use href="#i-arrow"/></svg></a><button class="button button-white" data-example="aanya">See an example <svg class="icon"><use href="#i-up"/></svg></button></div><p class="microcopy">Free to start · No account needed to build your resume</p></div><svg class="footer-waves" viewBox="0 0 1440 300" preserveAspectRatio="none" aria-hidden="true"><path fill="#cfeaff" d="M0 52c95-17 247 236 387 202S659 95 898 141 1264 201 1440 0v300H0Z"/><path fill="#e6f4ff" d="M0 154c220-199 317 193 527 112s250-147 451-55 309-98 462-74v163H0Z"/><path fill="#f6fbff" d="M0 190c196-21 241 121 541 50S977 363 1440 192v108H0Z"/></svg></section>
+</main>
+
+<footer class="site-footer"><div class="container footer-grid reveal stagger"><div class="footer-brand"><a class="brand" href="#top" aria-label="LiveCV home"><img src="assets/livecv-logo-original.jpeg" alt="LiveCV" width="2048" height="1152" loading="lazy"></a><p>Your career. Your story. One identity.</p></div><div><h3>Product</h3><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="cvid.html">Look up a CVID</a><a href="https://livecv.dev/build" target="_blank" rel="noopener">Builder ↗</a></div><div><h3>Company</h3><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="for-institutions.html">For Institutions</a><a href="https://placements.livecv.dev" target="_blank" rel="noopener">Placements Page ↗</a></div><div><h3>Legal</h3><button data-dialog="privacy">Privacy</button><button data-dialog="terms">Terms</button></div><div class="footer-note"><p>© 2026 LiveCV</p><small>Design concept · Illustrative profiles</small><a class="back-top" href="#top">Back to top ↑</a></div></div></footer>
+
+<dialog id="site-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close dialog">×</button><div id="dialog-content"></div></dialog>
+<div class="toast" role="status" aria-live="polite" id="toast"></div>
+<noscript><p class="noscript-note">Navigation and builder links work without JavaScript. Enable JavaScript to explore interactive profile examples.</p></noscript>
+</body>
+</html>

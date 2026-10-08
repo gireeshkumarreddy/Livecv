@@ -1,31 +1,33 @@
-# LiveCV landing page
+# LiveCV website
 
-A responsive, buildless HTML/CSS/JavaScript landing page based on the approved soft-blue visual reference.
+A responsive, buildless HTML/CSS/JavaScript marketing site for LiveCV: a home page plus Features, Pricing, About Us, Contact, For Institutions and Look up a CVID. Everything in `dist/` is served as-is; there is no build step.
 
-## Files
+Live preview: https://gireeshkumarreddy.github.io/Livecv/ (deployed by GitHub Pages on every push to `main`, see `.github/workflows/pages.yml`).
 
-- `dist/index.html`: semantic page content and reusable SVG icons.
-- `dist/styles.css`: responsive layout, spacing, original-logo framing and reduced-motion styling.
-- `dist/app.js`: profile tabs, example/project dialogs, copy controls, sample headline editing, category/audience selection, mobile navigation and fade-in animation.
-- `dist/profile-details.css`: responsive skill visuals, tool icons and expandable experience timelines for Aanya, Noah and Maya.
-- `dist/assets`: local fonts, the supplied original logo, and generated illustrative portrait/project photography.
+## Pages
 
-Serve the `dist` directory with a static web server. No build process or external JavaScript dependencies are required.
+- `dist/index.html`: home page. Logo intro, hero, the 30-second launch video, what LiveCV is (GID and CVIDs), PDF vs. LiveCV, how to start, what you get, example profiles, sharing, who it's for, FAQ.
+- `dist/features.html`, `dist/pricing.html`, `dist/about.html`, `dist/contact.html`, `dist/for-institutions.html`, `dist/cvid.html`: inner pages with content from livecv.dev, in the same design.
+
+## Code
+
+- `styles.css`: layout, type (DM Sans), header, footer and home page sections.
+- `motion.css` / `motion.js`: scroll reveals, word-by-word headings, the growing 16:9 video, the blue color switch and pointer effects.
+- `intro.css` / `intro.js`: home page intro (resumes fly into the CV mark, the logo lands in the header). Skips on any click, key or scroll, and for reduced motion.
+- `video-player.js`: the launch video autoplays muted on a loop when it comes into view.
+- `app.js`: example profiles, dialogs, mobile menu and header state. Safe to load on every page.
+- `pages.css` / `pages.js`: inner-page layouts and interactions (contact tabs, CVID lookup, placements walkthrough, consent demo).
+- `profile-details.css`: example-profile dialog details.
+- `assets/`: fonts, logos, the launch video and poster, and illustrative images (prompts in `docs/`).
 
 ## Product boundaries
 
-- The video area is intentionally a placeholder with no simulated playback.
-- Profile identities and projects are illustrative. The example link is labeled accordingly.
-- Every example profile has a distinct AI-generated skill visual, three relevant capability descriptions and two illustrative experience entries. Skill images and experience shortcuts on the example cards open the corresponding profile tab; native disclosure controls expand responsibilities and tools.
-- Each profile owns three different projects: Aanya has Finly, Horizon and Journey; Noah has Sensor Lab, Dataflow and Kinetic; Maya has Bloom, Pulse and Together. No project image is shared across profiles. Skills use three separate creative compositions, and each Experience header has its own image rather than reusing its Skills image.
-- Profile creation links open `https://livecv.dev/build`.
-- Login links open the verified `https://livecv.dev/login` route. Authentication and paid account capabilities remain in the official LiveCV product. This landing page does not implement an authentication or payment backend.
-- The sample headline editor is browser-session only. No personal information is submitted.
-- Legal dialogs identify the preview and direct visitors to the official product.
-- Portraits and project visuals are individual AI-generated images, each 1672×941 pixels, encoded as pixel-identical lossless WebP. They replace the previous 724px tile crops and remain crisp in responsive cards and larger dialogs. The built-in generator returned HD despite a 4K prompt; these assets are not native 4K. Generation prompts and asset paths are recorded in `docs/ai-image-assets.json`.
+- Create, Builder, Log in and Upload links open the official product at livecv.dev. This site has no account, payment or file-processing backend.
+- The contact and demo-request forms open the visitor's email app addressed to support@livecv.work or partners@livecv.work.
+- The CVID lookup opens livecv.work/id/… for GIDs and livecv.work/cv/… for CVIDs.
+- Pricing shows the plans livecv.dev publishes (currently the Free plan).
+- Example people, portraits, projects and dashboard data are illustrative and labelled as such.
 
-## Spacing and accessibility
+## Run locally
 
-Major desktop chapters use 88–124px of top and bottom padding, giving approximately 192px or more between adjoining content groups. Mobile spacing and typography are scaled independently. Native links, accessible dialogs, keyboard-operated tabs, a skip link, reduced-motion support and native FAQ disclosures are included.
-
-The hosted repository is the source of truth for this site. Deployment metadata is in `.openai/hosting.json`.
+Serve `dist/` with any static web server, for example `python -m http.server 8137 --directory dist`.
